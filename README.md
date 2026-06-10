@@ -55,7 +55,7 @@ agriAnomalyR/
 
 `agriAnomalyR` est un package R professionnel conçu pour l'importation, le nettoyage, l'imputation et la détection d'anomalies dans les données de capteurs IoT agricoles (humidité du sol, température, etc.). Il intègre un pipeline complet allant du fichier brut jusqu'à la génération d'alertes agronomiques.
 
----
+```
 
 ## 🛠️ Description des Fonctions
 
@@ -72,7 +72,7 @@ Le package est articulé autour de briques fonctionnelles modulaires et d'une fo
 * **`impute_missing_values(data, method = "linear", ...)`**
   Nettoie le jeu de données en remplaçant les valeurs manquantes (`NA`) causées par des pannes de capteurs ou des pertes de signal. Elle propose trois techniques robustes : l'**interpolation linéaire**, la **moyenne mobile** (avec gestion automatique des effets de bord) et une approche par **KNN** (plus proches voisins).
 
----
+```
 
 ### 🔍 2. Analyse et Détection d'Anomalies
 
@@ -82,7 +82,7 @@ Le package est articulé autour de briques fonctionnelles modulaires et d'une fo
 * **`classify_anomalies(data, ...)`**
   Prend le relais après la détection pour qualifier et catégoriser la sévérité ou la nature des anomalies trouvées, permettant ainsi de trier efficacement les faux positifs des vrais dysfonctionnements structurels.
 
----
+```
 
 ### 📊 3. Statistiques et Alertes
 
@@ -92,7 +92,8 @@ Le package est articulé autour de briques fonctionnelles modulaires et d'une fo
 * **`generate_alerts(data, ...)`**
   Scrutateur en temps réel qui déclenche des notifications et génère des rapports d'alertes détaillés dès que les mesures des capteurs (humidité critique, pic de chaleur) franchissent des seuils agronomiques de danger prédéfinis.
 
----
+```
+```
 ## 🎯 Sortie attendue cas de data_classif
 ```
  # A tibble: 6 × 13
@@ -108,12 +109,17 @@ Le package est articulé autour de briques fonctionnelles modulaires et d'une fo
 #   anomaly <lgl>, anomaly_soil_moisture <lgl>,
 #   anomaly_soil_temperature <lgl>, anomaly_humidity <lgl>,
 #   anomaly_air_temperature <lgl>, anomaly_type <chr>
-```
 
+```
 ##⚠️ 
+```
 Si vous ne dispose pas des coordonnees (latitude et longitude) dans votre dataset vous ne pourrez pas visualiser la zone, ce qui est le cas dans la dataset exemple fournis dans le package
+```
 ##⚠️ Pour les programmeurs qui veulent tester l'integrite du package
-##⚠️ Si for pc n'a pas rtools installez rtools si rtools est installes et que ca donne des erreurs essayez les commandes ci-dessous et d'obtenir les meme resultats  
+```
+```
+###⚠️ Si for pc n'a pas rtools installez rtools si rtools est installes et que ca donne des erreurs essayez les commandes ci-dessous et d'obtenir les meme resultats  
+```
 
 > file.exists("C:/rtools44/x86_64-w64-mingw32.static.posix/bin/gcc.exe")
 [1] TRUE
