@@ -1,0 +1,54 @@
+---
+title: "Workflow agriAnomalyR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Workflow agriAnomalyR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(agriAnomalyR)
+```
+
+## Chargement des données
+
+```{r}
+path <- system.file("extdata", "sensor_example.csv", package = "agriAnomalyR")
+raw <- import_sensor_data(path)
+head(raw)
+```
+
+## Nettoyage
+
+```{r}
+clean <- clean_sensor_data(raw)
+```
+
+## Détection d'anomalies
+
+```{r}
+anom <- detect_anomalies(clean, method = "moving_average")
+anom <- classify_anomalies(anom)
+table(anom$anomaly_type, useNA = "ifany")
+```
+
+## Imputation
+
+```{r}
+imputed <- impute_missing_values(anom, method = "linear")
+```
+
+## Statistiques et alertes
+
+```{r}
+calculate_sensor_statistics(imputed)
+generate_alerts(imputed)
+```
+
+## Visualisation
+
+```{r, fig.width=7, fig.height=8}
+plot_timeseries(imputed)
+```

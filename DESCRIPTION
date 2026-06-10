@@ -1,0 +1,29 @@
+Package: agriAnomalyR
+Type: Package
+Title: Detection and Correction of Anomalies in Agricultural Sensor Data
+Version: 0.1.0
+Authors@R: person("Mohamed", "KABA", email = "medbi18547@gmail.com", role = c("aut", "cre"))
+Description: Tools to import, clean, detect, classify and visualize anomalies in agricultural IoT sensor time series.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr,
+    readr,
+    readxl,
+    jsonlite,
+    lubridate,
+    tidyr,
+    tidyselect,
+    ggplot2,
+    zoo,
+    leaflet,
+    stats,
+    utils
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
