@@ -94,7 +94,7 @@ Le package est articulé autour de briques fonctionnelles modulaires et d'une fo
 
 ---
 ## 🎯 Sortie attendue cas de data_classif
-```r
+```
  # A tibble: 6 × 13
   timestamp           crop_health soil_moisture soil_temperature humidity
   <dttm>              <chr>               <dbl>            <dbl>    <dbl>
