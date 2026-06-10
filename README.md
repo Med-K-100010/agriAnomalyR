@@ -50,13 +50,12 @@ agriAnomalyR/
 ├── data-raw/
 └── README.md
 ```
-```
+
 # agriAnomalyR 🌾
 
 `agriAnomalyR` est un package R professionnel conçu pour l'importation, le nettoyage, l'imputation et la détection d'anomalies dans les données de capteurs IoT agricoles (humidité du sol, température, etc.). Il intègre un pipeline complet allant du fichier brut jusqu'à la génération d'alertes agronomiques.
-```
 
-```
+
 
 ## 🛠️ Description des Fonctions
 
@@ -91,8 +90,8 @@ Le package est articulé autour de briques fonctionnelles modulaires et d'une fo
 * **`generate_alerts(data, ...)`**
   Scrutateur en temps réel qui déclenche des notifications et génère des rapports d'alertes détaillés dès que les mesures des capteurs (humidité critique, pic de chaleur) franchissent des seuils agronomiques de danger prédéfinis.
 
-```
-```
+
+
 ## 🎯 Sortie attendue cas de data_classif
 ```
  # A tibble: 6 × 13
@@ -112,8 +111,7 @@ Le package est articulé autour de briques fonctionnelles modulaires et d'une fo
 ```
 ##⚠️ 
 Si vous ne dispose pas des coordonnees (latitude et longitude) dans votre dataset vous ne pourrez pas visualiser la zone, ce qui est le cas dans la dataset exemple fournis dans le package
-```
-```
+
 ##⚠️ Pour les programmeurs qui veulent tester l'integrite du package
 ###⚠️ Si for pc n'a pas rtools installez rtools si rtools est installes et que ca donne des erreurs essayez les commandes ci-dessous et d'obtenir les meme resultats  
 ```
