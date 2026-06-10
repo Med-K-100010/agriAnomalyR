@@ -94,7 +94,8 @@ Le package est articulé autour de briques fonctionnelles modulaires et d'une fo
 
 ---
 ## 🎯 Sortie attendue cas de data_classif
-* ** # A tibble: 6 × 13
+```r
+ # A tibble: 6 × 13
   timestamp           crop_health soil_moisture soil_temperature humidity
   <dttm>              <chr>               <dbl>            <dbl>    <dbl>
 1 2024-01-01 00:00:00 Healthy              20.0             16.5     72.1
@@ -107,7 +108,8 @@ Le package est articulé autour de briques fonctionnelles modulaires et d'une fo
 #   anomaly <lgl>, anomaly_soil_moisture <lgl>,
 #   anomaly_soil_temperature <lgl>, anomaly_humidity <lgl>,
 #   anomaly_air_temperature <lgl>, anomaly_type <chr>
-**
+```
+
 ##⚠️ 
 Si vous ne dispose pas des coordonnees (latitude et longitude) dans votre dataset vous ne pourrez pas visualiser la zone, ce qui est le cas dans la dataset exemple fournis dans le package
 ##⚠️ Pour les programmeurs qui veulent tester l'integrite du package
