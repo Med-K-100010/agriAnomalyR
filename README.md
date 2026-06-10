@@ -109,11 +109,11 @@ Le package est articulé autour de briques fonctionnelles modulaires et d'une fo
 #   anomaly_air_temperature <lgl>, anomaly_type <chr>
 
 ```
-##⚠️ 
+## ⚠️ 
 Si vous ne dispose pas des coordonnees (latitude et longitude) dans votre dataset vous ne pourrez pas visualiser la zone, ce qui est le cas dans la dataset exemple fournis dans le package
 
-##⚠️ Pour les programmeurs qui veulent tester l'integrite du package
-###⚠️ Si for pc n'a pas rtools installez rtools si rtools est installes et que ca donne des erreurs essayez les commandes ci-dessous et d'obtenir les meme resultats  
+## ⚠️ Pour les programmeurs qui veulent tester l'integrite du package
+### ⚠️ Si for pc n'a pas rtools installez rtools si rtools est installes et que ca donne des erreurs essayez les commandes ci-dessous et d'obtenir les meme resultats  
 ```
 
 > file.exists("C:/rtools44/x86_64-w64-mingw32.static.posix/bin/gcc.exe")
